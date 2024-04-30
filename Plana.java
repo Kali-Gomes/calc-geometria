@@ -11,6 +11,9 @@ public class Plana{
     double h;
     double n; 
     double r; 
+    double R;
+    double L; 
+    double l; 
 
     public String Square(){
         double area = Math.pow(this.a, 2);

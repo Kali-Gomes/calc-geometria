@@ -56,7 +56,7 @@ public class Espacial extends Plana{
     }
 
     public String Cilindro(){
-        double aB = Math.PI * Math.sqrt(this.r);
+        double aB = Math.PI * Math.pow(this.r, 2);
         double aL = 2 * Math.PI * this.r * this.h;
         double aT = (aB * 2) + aL;
         double V = Math.PI * this.r * this.h; 
@@ -65,11 +65,26 @@ public class Espacial extends Plana{
     }
 
     public String Cone(){
-        double aB = Math.PI * Math.sqrt(this.r);
+        double aB = Math.PI * Math.pow(this.r, 2);
         double aL = Math.PI * this.r * this.g; 
         double aT = aB + aL; 
         double V = aB * h; 
     
         return String.valueOf(aB) + " " + String.valueOf(aL) + " " + String.valueOf(aT) +" " + String.valueOf(V);
+    }
+
+    public String Esfera(){
+        double aS = 4 * Math.pow(this.r,2) * Math.PI;
+        double V  = (Math.PI * Math.pow(3, this.r) * 3) / 4;
+    }
+
+    public String TroncoQ(){
+        SB = Math.sqrt(this.L);
+        Sb = Math.sqrt(this.l);
+        V = (this.h/3) * (SB + Math.sqrt(SB*Sb) + Sb); 
+    }
+
+    public String TroncoC(){
+        V = Math.PI * this.h * (Math.pow(this.r, 2) + this.r * this.R + Math.pow(this.R, 2));
     }
 }
