@@ -76,15 +76,18 @@ public class Espacial extends Plana{
     public String Esfera(){
         double aS = 4 * Math.pow(this.r,2) * Math.PI;
         double V  = (Math.PI * Math.pow(3, this.r) * 3) / 4;
+        return String.valueOf(aS) + " " + String.valueOf(V);
     }
 
     public String TroncoQ(){
-        SB = Math.sqrt(this.L);
-        Sb = Math.sqrt(this.l);
-        V = (this.h/3) * (SB + Math.sqrt(SB*Sb) + Sb); 
+        double SB = Math.sqrt(this.L);
+        double Sb = Math.sqrt(this.l);
+        double V = (this.h/3) * (SB + Math.sqrt(SB*Sb) + Sb); 
+        return String.valueOf(SB) + " " + String.valueOf(Sb) + " " + String.valueOf(V);
     }
 
     public String TroncoC(){
-        V = Math.PI * this.h * (Math.pow(this.r, 2) + this.r * this.R + Math.pow(this.R, 2));
+        double V = Math.PI * this.h * (Math.pow(this.r, 2) + this.r * this.R + Math.pow(this.R, 2));
+        return String.valueOf(V);
     }
 }

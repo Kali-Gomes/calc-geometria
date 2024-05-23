@@ -37,7 +37,7 @@ public class Plana{
     }    
     
     public String TriangleEqui(){
-        double area = (this.a * Math.sqrt(3)); 
+        double area = ((this.a * Math.sqrt(3)) / 4); 
         double perimetro = this.a * 3;         
 
         return String.valueOf(area) + " " + String.valueOf(perimetro);
