@@ -9,6 +9,7 @@ public class Main extends Espacial {
         while (true) {
             System.out.println("1 - Geometria Plana");
             System.out.println("2 - Geometria Espacial");
+            System.out.println("3 - Sair do programa");
 
             int escolha = scn.nextInt();
             scn.nextLine();
@@ -138,6 +139,7 @@ public class Main extends Espacial {
                     break;
 
                 case 2:
+
                     System.out.println("Geometria Espacial:");
                     System.out.println("1 - Pirâmide de base quadrada");
                     System.out.println("2 - Pirâmide de base triangular");
@@ -150,6 +152,7 @@ public class Main extends Espacial {
                     System.out.println("9 - Tronco de cone");
                     System.out.println("10 - Tronco de base quadrada");
                     System.out.println("11 - Esfera");
+                    
 
                     escolha = scn.nextInt();
                     scn.nextLine();
@@ -288,8 +291,13 @@ public class Main extends Espacial {
                             break;
                     }
                     break;
-
-                default:
+                case 3:
+                    System.out.println("Programa fechado");
+                    scn.close();
+                    System.exit(0);
+                break;
+                
+                    default:
                     System.out.println("Valor inserido inválido");
 
                     break;
