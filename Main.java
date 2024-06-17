@@ -13,7 +13,7 @@ public class Main extends Espacial {
 
             int escolha = scn.nextInt();
             scn.nextLine();
-
+            
             switch (escolha) {
                 case 1:
                     System.out.println("Geometria Plana:");
@@ -100,7 +100,7 @@ public class Main extends Espacial {
                             scn.nextLine();
                             System.out.println("Insira o valor da base menor do trapézio");
                             plna.d = scn.nextDouble();
-                            scn.nextLine();
+                                 scn.nextLine();
                             System.out.println("Insira o valor da altura do trapézio");
                             plna.a = scn.nextDouble();
                             scn.nextLine();
@@ -137,7 +137,6 @@ public class Main extends Espacial {
                             break;
                     }
                     break;
-
                 case 2:
 
                     System.out.println("Geometria Espacial:");
@@ -296,13 +295,10 @@ public class Main extends Espacial {
                     scn.close();
                     System.exit(0);
                 break;
-                
                     default:
                     System.out.println("Valor inserido inválido");
-
                     break;
             }
-
         }
     }
 }

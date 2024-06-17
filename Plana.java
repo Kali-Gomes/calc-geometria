@@ -69,5 +69,5 @@ public class Plana{
         double area = Math.PI * Math.sqrt(r); 
 
         return String.valueOf(area) + " " + String.valueOf(Comprimento);
-    }
+    } 
 }
